@@ -27,6 +27,20 @@ go get golang.org/x/example/hello/reverse
 
 This will add the dependcy to your module's `go.mod` file.
 
+---
+
+You can also add imports to a file first, like this:
+
+```go
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+```
+
+...and then run `go get .` from the directory where the `go.mod` file is located. This will add the dependencies to your `go.mod` file.
+
 
 ## How to import modules
 
